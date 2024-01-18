@@ -1,0 +1,204 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "category": "Fiction",
+      "ISBN": "978-3-16-148410-1",
+      "created_at": "13 march 2022, 9:15",
+      "updated_at": "",
+      "activated": true
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "category": "Dystopian",
+      "ISBN": "978-3-16-148410-2",
+      "created_at": "14 march 2022, 10:45",
+      "updated_at": "15 march 2022, 15:58",
+      "activated": false
+    },
+    {
+      "id": "3",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "category": "Coming-of-age",
+      "ISBN": "978-3-16-148410-3",
+      "created_at": "15 march 2022, 11:30",
+      "updated_at": "",
+      "activated": true
+    },
+    {
+      "id": "4",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "category": "Romance",
+      "ISBN": "978-3-16-148410-4",
+      "created_at": "16 march 2022, 12:20",
+      "updated_at": "17 march 2022, 17:15",
+      "activated": false
+    },
+    {
+      "id": "5",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "ISBN": "978-3-16-148410-5",
+      "created_at": "17 march 2022, 13:05",
+      "updated_at": "",
+      "activated": false
+    },
+    {
+      "id": "6",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "category": "Mystery",
+      "ISBN": "978-3-16-148410-6",
+      "created_at": "18 march 2022, 14:40",
+      "updated_at": "",
+      "activated": true
+    },
+    {
+      "id": "7",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "ISBN": "978-3-16-148410-7",
+      "created_at": "19 march 2022, 15:25",
+      "updated_at": "20 march 2022, 20:52",
+      "activated": false
+    },
+    {
+      "id": "8",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "category": "Dystopian",
+      "ISBN": "978-3-16-148410-8",
+      "created_at": "20 march 2022, 16:10",
+      "updated_at": "",
+      "activated": false
+    },
+    {
+      "id": "9",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "ISBN": "978-3-16-148410-9",
+      "created_at": "21 march 2022, 17:00",
+      "updated_at": "",
+      "activated": false
+    },
+    {
+      "id": "10",
+      "title": "The Shining",
+      "author": "Stephen King",
+      "category": "Horror",
+      "ISBN": "978-3-16-148410-10",
+      "created_at": "22 march 2022, 17:45",
+      "updated_at": "",
+      "activated": false
+    },
+    {
+      "id": "11",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "category": "Dystopian",
+      "ISBN": "978-3-16-148410-11",
+      "created_at": "23 march 2022, 18:30",
+      "updated_at": "24 march 2022, 0:48",
+      "activated": true
+    },
+    {
+      "id": "12",
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "category": "Young Adult",
+      "ISBN": "978-3-16-148410-12",
+      "created_at": "24 march 2022, 19:15",
+      "updated_at": "",
+      "activated": true
+    },
+    {
+      "id": "13",
+      "title": "Gone Girl",
+      "author": "Gillian Flynn",
+      "category": "Mystery",
+      "ISBN": "978-3-16-148410-13",
+      "created_at": "25 march 2022, 20:00",
+      "updated_at": "26 march 2022, 2:32",
+      "activated": false
+    },
+    {
+      "id": "14",
+      "title": "The Girl on the Train",
+      "author": "Paula Hawkins",
+      "category": "Mystery",
+      "ISBN": "978-3-16-148410-14",
+      "created_at": "26 march 2022, 20:45",
+      "updated_at": "",
+      "activated": false
+    },
+    {
+      "id": "15",
+      "title": "The Chronicles of Narnia",
+      "author": "C.S. Lewis",
+      "category": "Fantasy",
+      "ISBN": "978-3-16-148410-15",
+      "created_at": "27 march 2022, 21:30",
+      "updated_at": "",
+      "activated": true
+    },
+    {
+      "id": "16",
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "category": "Post-apocalyptic",
+      "ISBN": "978-3-16-148410-16",
+      "created_at": "28 march 2022, 22:15",
+      "updated_at": "29 march 2022, 5:32",
+      "activated": false
+    },
+    {
+      "id": "17",
+      "title": "The Stand",
+      "author": "Stephen King",
+      "category": "Horror",
+      "ISBN": "978-3-16-148410-17",
+      "created_at": "29 march 2022, 23:00",
+      "updated_at": "",
+      "activated": false
+    },
+    {
+      "id": "18",
+      "title": "Jurassic Park",
+      "author": "Michael Crichton",
+      "category": "Science Fiction",
+      "ISBN": "978-3-16-148410-18",
+      "created_at": "30 march 2022, 23:45",
+      "updated_at": "31 march 2022, 7:18",
+      "activated": false
+    },
+    {
+      "id": "19",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "category": "Philosophical",
+      "ISBN": "978-3-16-148410-19",
+      "created_at": "31 march 2022, 0:30",
+      "updated_at": "",
+      "activated": true
+    },
+    {
+      "id": "20",
+      "title": "The Martian",
+      "author": "Andy Weir",
+      "category": "Science Fiction",
+      "ISBN": "978-3-16-148410-20",
+      "created_at": "1 april 2022, 1:15",
+      "updated_at": "",
+      "activated": true
+    }
+  ]
+}
