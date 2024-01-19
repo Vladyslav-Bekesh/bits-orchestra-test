@@ -1,17 +1,7 @@
 import styled from "@emotion/styled";
 
-
-
-export const List = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  &:not(:last-child) {
-    margin-bottom: 5px;
-  }
-`;
 interface ItemProps {
-  activated?: boolean | null | undefined;
+  activated: boolean;
 }
 
 export const Item = styled.li<ItemProps>`

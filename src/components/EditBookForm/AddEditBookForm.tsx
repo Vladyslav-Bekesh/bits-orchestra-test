@@ -4,22 +4,31 @@ import {
   Container,
   ValuesContainer,
   ValuesFormContainer,
-} from "./EditBookForm.styled";
+} from "./AddEditBookForm.styled";
+import { useNavigate } from "react-router-dom";
 
 type TEditBookForm = {
   book: TBook;
   onSetNewBook: any;
+  pageType: "edit" | "create";
 };
 
 type TNewBook = Pick<Partial<TBook>, "title" | "author" | "category">;
 
-const EditBookForm: React.FC<TEditBookForm> = ({ book, onSetNewBook }) => {
+const EditBookForm: React.FC<TEditBookForm> = ({
+  book,
+  onSetNewBook,
+  pageType,
+}) => {
+  const { title, author, category } = book;
   const bookKeys = Object.keys(book) as Array<keyof TBook>;
 
+  const navigate = useNavigate();
+
   const [newBookValues, setNewBookValues] = useState<TNewBook>({
-    title: "",
-    author: "",
-    category: "",
+    title: `${title}`,
+    author: `${author}`,
+    category: `${category}`,
   });
 
   const sanitizeValue = (value: string | number | null | undefined) => {
@@ -50,6 +59,7 @@ const EditBookForm: React.FC<TEditBookForm> = ({ book, onSetNewBook }) => {
     onSetNewBook({
       ...mergedBook,
     });
+    navigate("/");
   };
 
   return (

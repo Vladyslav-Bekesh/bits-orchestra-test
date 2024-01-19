@@ -7,18 +7,18 @@
       "category": "Fiction",
       "ISBN": "978-3-16-148410-1",
       "created_at": "13 march 2022, 9:15",
-      "updated_at": "",
-      "activated": true
+      "updated_at": "19 January 2024, 9:48AM",
+      "activated": false
     },
     {
       "id": "2",
-      "title": "1984",
+      "title": "1986",
       "author": "George Orwell",
       "category": "Dystopian",
       "ISBN": "978-3-16-148410-2",
       "created_at": "14 march 2022, 10:45",
-      "updated_at": "15 march 2022, 15:58",
-      "activated": false
+      "updated_at": "19 January 2024, 9:41AM",
+      "activated": true
     },
     {
       "id": "3",

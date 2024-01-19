@@ -10,6 +10,7 @@ export {
   deleteBook,
   changeActivatedBook,
   getBook,
+  editBook,
 } from "./queries/index";
 
 export type {
@@ -19,6 +20,8 @@ export type {
   TGetBooks,
   TGetBook,
   TOnChangeActivatedBook,
+  TOnEditBook,
+  TFilter,
 } from "./types";
 
 export { transormCategoryName } from "./transormCategoryName";
