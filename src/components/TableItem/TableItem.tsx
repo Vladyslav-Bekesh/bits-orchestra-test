@@ -43,7 +43,11 @@ const TableItem: React.FC<TTableItemProps> = ({
         <button onClick={() => onChangeActivatedBook(activated, id)}>
           {activated ? "Deactivate" : "Activate"}
         </button>
-        <button onClick={() => onDelete(id)}>Delete</button>
+
+        {!activated && (
+          <button onClick={() => onDelete(id, activated)}>Delete</button>
+        )}
+
         <NavLink to={`/edit-book/${id}`}>Edit</NavLink>
       </div>
     </Item>

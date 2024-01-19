@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getBook, TBook } from "../../utils";
-import EditBookForm from "../../components/EditBookForm/AddEditBookForm";
+import AddEditBookForm from "../../components/BookEdit";
 import { editBook } from "../../utils";
-type TAddEditBook = {
-  pageType: "edit" | "create";
-};
-const AddEditBook: React.FC<TAddEditBook> = ({ pageType }) => {
+
+const EditBook: React.FC = () => {
   const [book, setBook] = useState<TBook | undefined>(undefined);
   const [newBook, setNewBook] = useState<TBook | undefined>(undefined);
   const { id } = useParams<{ id: string }>();
@@ -32,8 +30,7 @@ const AddEditBook: React.FC<TAddEditBook> = ({ pageType }) => {
       try {
         if (newBook) {
           await editBook(Number(id), newBook);
-          // Додайте необхідну навігацію після успішного редагування
-          navigate("/dashboard");
+          navigate("/");
         }
       } catch (error) {
         console.error("Error editing book:", error);
@@ -46,8 +43,10 @@ const AddEditBook: React.FC<TAddEditBook> = ({ pageType }) => {
   }, [id, newBook, navigate]);
 
   return book ? (
-    <EditBookForm book={book} onSetNewBook={setNewBook} pageType={pageType} />
-  ) : null;
+    <AddEditBookForm book={book} onSetNewBook={setNewBook} />
+  ) : (
+    <p>Book can`t be loaded</p>
+  );
 };
 
-export default AddEditBook;
+export default EditBook;

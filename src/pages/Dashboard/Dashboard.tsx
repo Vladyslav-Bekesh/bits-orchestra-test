@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BookTable from "../../components/BookTable";
+import Filter from "../../components/Filter";
 import {
   TBooks,
   TFilter,
@@ -9,10 +10,22 @@ import {
   deleteBook,
   getBooks,
 } from "../../utils";
-import Filter from "../../components/Filter";
 
 const Dashboard: React.FC = () => {
   const [books, setBooks] = useState<TBooks>([]);
+  const [filter, setFilter] = useState<TFilter>("Active");
+
+  const filteredBooks = books.filter((book) => {
+    if (filter === "All") {
+      return true;
+    } else if (filter === "Active") {
+      return book.activated;
+    } else if (filter === "Deactivated") {
+      return !book.activated;
+    }
+
+    return false;
+  });
 
   useEffect(() => {
     const fetchBooks = async () => {
@@ -27,9 +40,12 @@ const Dashboard: React.FC = () => {
     fetchBooks();
   }, []);
 
-  const onDelete: TOnDelete = async (isbn) => {
+  const onDelete: TOnDelete = async (isbn, activated) => {
     try {
-      await deleteBook(isbn);
+      if (activated) {
+        throw new Error("Activated book can’t be deleted");
+      }
+      await deleteBook(isbn, activated);
 
       const updatedBooks = await getBooks();
       setBooks(updatedBooks);
@@ -48,30 +64,18 @@ const Dashboard: React.FC = () => {
       console.error("Error deleting book:", error);
     }
   };
-  const [filter, setFilter] = useState<TFilter>("Active");
-
-  const filteredBooks = books.filter((book) => {
-    if (filter === "All") {
-      return true;
-    } else if (filter === "Active") {
-      return book.activated;
-    } else if (filter === "Deactivated") {
-      return !book.activated;
-    }
-
-    return false;
-  });
 
   return (
     <>
       <Filter setFilter={setFilter} filter={filter}></Filter>
-      <span>Showing {filteredBooks.length} elements</span>
+      <span>
+        Showing {filteredBooks.length} elements of {books.length}
+      </span>
 
       <BookTable
         books={filteredBooks}
         onDelete={onDelete}
         onChangeActivatedBook={onChangeActivatedBook}
-        filter={filter}
       />
     </>
   );

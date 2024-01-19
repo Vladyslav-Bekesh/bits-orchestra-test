@@ -1,36 +1,6 @@
 {
   "books": [
     {
-      "id": "1",
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "category": "Fiction",
-      "ISBN": "978-3-16-148410-1",
-      "created_at": "13 march 2022, 9:15",
-      "updated_at": "19 January 2024, 9:48AM",
-      "activated": false
-    },
-    {
-      "id": "2",
-      "title": "1986",
-      "author": "George Orwell",
-      "category": "Dystopian",
-      "ISBN": "978-3-16-148410-2",
-      "created_at": "14 march 2022, 10:45",
-      "updated_at": "19 January 2024, 9:41AM",
-      "activated": true
-    },
-    {
-      "id": "3",
-      "title": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "category": "Coming-of-age",
-      "ISBN": "978-3-16-148410-3",
-      "created_at": "15 march 2022, 11:30",
-      "updated_at": "",
-      "activated": true
-    },
-    {
       "id": "4",
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
@@ -51,16 +21,6 @@
       "activated": false
     },
     {
-      "id": "6",
-      "title": "The Da Vinci Code",
-      "author": "Dan Brown",
-      "category": "Mystery",
-      "ISBN": "978-3-16-148410-6",
-      "created_at": "18 march 2022, 14:40",
-      "updated_at": "",
-      "activated": true
-    },
-    {
       "id": "7",
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
@@ -68,16 +28,6 @@
       "ISBN": "978-3-16-148410-7",
       "created_at": "19 march 2022, 15:25",
       "updated_at": "20 march 2022, 20:52",
-      "activated": false
-    },
-    {
-      "id": "8",
-      "title": "The Hunger Games",
-      "author": "Suzanne Collins",
-      "category": "Dystopian",
-      "ISBN": "978-3-16-148410-8",
-      "created_at": "20 march 2022, 16:10",
-      "updated_at": "",
       "activated": false
     },
     {
@@ -108,17 +58,7 @@
       "ISBN": "978-3-16-148410-11",
       "created_at": "23 march 2022, 18:30",
       "updated_at": "24 march 2022, 0:48",
-      "activated": true
-    },
-    {
-      "id": "12",
-      "title": "The Fault in Our Stars",
-      "author": "John Green",
-      "category": "Young Adult",
-      "ISBN": "978-3-16-148410-12",
-      "created_at": "24 march 2022, 19:15",
-      "updated_at": "",
-      "activated": true
+      "activated": false
     },
     {
       "id": "13",
@@ -139,16 +79,6 @@
       "created_at": "26 march 2022, 20:45",
       "updated_at": "",
       "activated": false
-    },
-    {
-      "id": "15",
-      "title": "The Chronicles of Narnia",
-      "author": "C.S. Lewis",
-      "category": "Fantasy",
-      "ISBN": "978-3-16-148410-15",
-      "created_at": "27 march 2022, 21:30",
-      "updated_at": "",
-      "activated": true
     },
     {
       "id": "16",
@@ -188,16 +118,16 @@
       "ISBN": "978-3-16-148410-19",
       "created_at": "31 march 2022, 0:30",
       "updated_at": "",
-      "activated": true
+      "activated": false
     },
     {
       "id": "20",
-      "title": "The Martian",
+      "title": "The Winston",
       "author": "Andy Weir",
       "category": "Science Fiction",
       "ISBN": "978-3-16-148410-20",
       "created_at": "1 april 2022, 1:15",
-      "updated_at": "",
+      "updated_at": "19 January 2024, 3:50PM",
       "activated": true
     }
   ]
