@@ -11,6 +11,7 @@ export {
   changeActivatedBook,
   getBook,
   editBook,
+  createBook,
 } from "./queries/index";
 
 export type {
@@ -19,6 +20,7 @@ export type {
   TOnDelete,
   TGetBooks,
   TGetBook,
+  TOnCreateBook,
   TOnChangeActivatedBook,
   TOnEditBook,
   TFilter,

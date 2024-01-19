@@ -14,6 +14,7 @@
     "json-server": "^1.0.0-alpha.21",
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.44",
+    "nanoid": "^5.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",

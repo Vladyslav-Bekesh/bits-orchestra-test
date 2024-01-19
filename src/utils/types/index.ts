@@ -4,6 +4,7 @@ export type {
   TOnDelete,
   TGetBooks,
   TGetBook,
+  TOnCreateBook,
   TOnChangeActivatedBook,
   TOnEditBook,
 } from "./bookQueriesTypes";
